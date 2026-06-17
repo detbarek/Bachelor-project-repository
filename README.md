@@ -39,7 +39,7 @@ The three clinical datasets enter the pipeline at different stages of preprocess
 7. **Stage 9** — diagnostics: ROC, classifier confidence, alpha centre frequency, lowest-performing subjects, and the epoch-length comparison.
 8. **Stage 10** — consolidated statistics: paired Wilcoxon with rank-biserial effect sizes, age regressions, the eye-by-age mixed model, and the clinical-versus-Dortmund Mann-Whitney and likelihood-ratio slope tests.
 
-Cells marked **optional, safe to delete** in the notebook are robustness checks, superseded earlier versions, or one-off development cells, and are not needed to reproduce the reported results.
+Cells marked **optional** in the notebook are robustness checks, superseded earlier versions, or one-off development cells, and are not needed to reproduce the reported results.
 
 ## Configuration (paths)
 
