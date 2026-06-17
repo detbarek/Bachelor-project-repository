@@ -6,8 +6,8 @@ A logistic classifier is trained on FOOOF spectral features from a small clinica
 
 ## Notebooks
 
-- **`CHAMPS_LAST.ipynb`** — the full pipeline, run top to bottom: preprocessing, training, evaluation, deployment, connectivity, the Dortmund baseline and the cross-dataset comparison, diagnostics, and the consolidated statistics. Stage headings mark the sections.
-- **`Aperiodic_nb.ipynb`** — the spectral-decomposition analysis. Fits the FOOOF aperiodic exponent and offset and the aperiodic-corrected alpha power per subject for the large clinical and Dortmund datasets, plots all three against age (clinical full range, clinical 20–70, and Dortmund), and runs the EC-versus-EO aperiodic contrast and the mixed models on the cached CSVs. It reuses the paths, the trained model and the analysis cohort from the main pipeline, so run `CHAMPS_LAST.ipynb` first.
+- **`Combined_pipeline.ipynb`** — the full pipeline, run top to bottom: preprocessing, training, evaluation, deployment, connectivity, the Dortmund baseline and the cross-dataset comparison, diagnostics, and the consolidated statistics. Stage headings mark the sections.
+- **`Aperiodic_nb.ipynb`** — the spectral-decomposition analysis. Fits the FOOOF aperiodic exponent and offset and the aperiodic-corrected alpha power per subject for the large clinical and Dortmund datasets, plots all three against age (clinical full range, clinical 20–70, and Dortmund), and runs the EC-versus-EO aperiodic contrast and the mixed models on the cached CSVs. It reuses the paths, the trained model and the analysis cohort from the main pipeline, so run `Combined_pipeline.ipynb` first.
 
 ## Datasets
 
@@ -28,7 +28,7 @@ The three clinical datasets enter the pipeline at different stages of preprocess
 
 ## Pipeline stages (run order)
 
-`CHAMPS_LAST.ipynb` runs in order:
+`Combined_pipeline.ipynb` runs in order:
 
 1. **Configuration and helpers** — paths and all shared functions. Edit the paths first.
 2. **Stage 1** — convert the 100-subject EDF recordings to epoched `.fif`.
